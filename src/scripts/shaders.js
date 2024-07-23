@@ -1,4 +1,4 @@
-import { NewbShaders } from "../json/variants.js"
+const NewbShadersList = JSON.parse(JSON.stringify(NewbShaders));
 
 let type
 const list = document.body.querySelector(".list")
@@ -11,7 +11,7 @@ const search = urlParams.get("list")
 const searchName = name => {
   switch (name) {
     case "newbx":
-      type = NewbShaders
+      type = NewbShadersList
       return "Newb X"
     default:
       break

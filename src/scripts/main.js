@@ -1,8 +1,8 @@
-import { Shaders } from "../json/shaders.js"
+const ShadersList = JSON.parse(JSON.stringify(Shaders));
 
 const list = document.body.querySelector(".list")
 
-Shaders.forEach(element => {
+ShadersList.forEach(element => {
   if (list) {
     const shaderCard = document.createElement("div")
     shaderCard.className = "shader-card"

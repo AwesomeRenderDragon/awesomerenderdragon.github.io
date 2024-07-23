@@ -1,4 +1,4 @@
-import { NewbShaders } from "../json/variants.js";
+const NewbShadersList = JSON.parse(JSON.stringify(NewbShaders));
 
 let type;
 let shader;
@@ -14,7 +14,7 @@ const search = urlParams.get("shader");
 //
 switch (true) {
   case search?.includes("newbx"):
-    type = NewbShaders;
+    type = NewbShadersList;
     break;
   default:
     break;

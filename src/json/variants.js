@@ -1,4 +1,4 @@
-export const NewbShaders = [
+const NewbShaders = [
   {
     title: "Newb X Legacy",
     redirect: "/shader?shader=newbxlegacy",
