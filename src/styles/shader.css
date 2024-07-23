@@ -20,10 +20,54 @@ body {
   width: 100%;
 }
 
+.navbar {
+  background-color: #272d3c;
+  border-bottom: 1px solid #0d0f14;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 3;
+}
+
+.navbar .nav-item.primary {
+  float: left;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-top: 2px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #f1eeee;
+  /* line-height: 50px; */
+}
+
+.navbar .nav-item {
+  float: right;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-top: 4px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #bfbfbf;
+  /* line-height: 50px; */
+}
+
+.navbar .nav-item:hover {
+  color: #f1eeee !important;
+}
+
+.navbar .nav-item.active {
+  color: #f1eeee !important;
+}
+
 .main {
   max-width: 65%;
   min-height: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px !important;
   padding: 0px 20px;
   background-color: #1c202b;
 }
