@@ -1,3 +1,5 @@
+const { BASE_URL } = import.meta.env;
+
 export const NewbShaders = [
   {
     title: "Newb X Legacy",
@@ -10,16 +12,16 @@ export const NewbShaders = [
       available: "android, ios, windows",
       screenshots: [
         {
-          url: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/legacy/image.png",
+          url: `${BASE_URL}src/images/newbx/legacy/image.png`,
         },
         {
-          url: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/legacy/image2.png",
+          url: `${BASE_URL}src/images/newbx/legacy/image2.png`,
         },
         {
-          url: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/legacy/image3.png",
+          url: `${BASE_URL}src/images/newbx/legacy/image3.png`,
         },
         {
-          url: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/legacy/image4.png",
+          url: `${BASE_URL}src/images/newbx/legacy/image4.png`,
         },
       ],
       downloads: [
@@ -29,7 +31,8 @@ export const NewbShaders = [
             {
               version: "15.52",
               versionType: "beta",
-              support: "https://img.shields.io/badge/Supported_MC_version-1.21.0~1.21.1-2d7a3e?style=flat-square",
+              support:
+                "https://img.shields.io/badge/Supported_MC_version-1.21.0~1.21.1-2d7a3e?style=flat-square",
               files: [
                 {
                   href: "",
@@ -162,7 +165,8 @@ export const NewbShaders = [
             {
               version: "15.38-b1",
               versionType: "beta",
-              support: "https://img.shields.io/badge/Supported_MC_version-1.20.80+-2d7a3e?style=flat-square",
+              support:
+                "https://img.shields.io/badge/Supported_MC_version-1.20.80+-2d7a3e?style=flat-square",
               files: [
                 {
                   href: "",
@@ -350,8 +354,8 @@ export const NewbShaders = [
                 },
               ],
             },
-          ]
-        }
+          ],
+        },
       ],
     },
   },
