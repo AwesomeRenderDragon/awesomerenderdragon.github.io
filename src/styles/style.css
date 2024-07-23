@@ -14,10 +14,15 @@
 
 body {
   background-color: #1c202b;
+
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .main {
   max-width: 65%;
+  height: 100%;
   margin: 0 auto;
   padding: 0px 20px;
   background-color: #1c202b;
