@@ -1,7 +1,7 @@
 const NewbShaders = [
   {
     title: "Newb X Legacy",
-    redirect: "/shader?shader=newbxlegacy",
+    redirect: "./shader.html?shader=newbxlegacy",
     img: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/legacy/logo.png",
     desc: "By Devendrn",
     page: {
@@ -10,16 +10,16 @@ const NewbShaders = [
       available: "android, ios, windows",
       screenshots: [
         {
-          url: `/src/images/newbx/legacy/image.png`,
+          url: `./src/images/newbx/legacy/image.png`,
         },
         {
-          url: `/src/images/newbx/legacy/image2.png`,
+          url: `./src/images/newbx/legacy/image2.png`,
         },
         {
-          url: `/src/images/newbx/legacy/image3.png`,
+          url: `./src/images/newbx/legacy/image3.png`,
         },
         {
-          url: `/src/images/newbx/legacy/image4.png`,
+          url: `./src/images/newbx/legacy/image4.png`,
         },
       ],
       downloads: [
@@ -359,7 +359,7 @@ const NewbShaders = [
   },
   {
     title: "Newb X Future",
-    redirect: "/shader?shader=newbxfuture",
+    redirect: "./shader.html?shader=newbxfuture",
     img: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/future/logo.png",
     desc: "By 1Sekon",
     page: {
@@ -371,7 +371,7 @@ const NewbShaders = [
   },
   {
     title: "Newb X Paretion",
-    redirect: "/shader?shader=newbxparetion",
+    redirect: "./shader.html?shader=newbxparetion",
     img: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/paretion/logo.png",
     desc: "By KuriMC",
     page: {
@@ -383,7 +383,7 @@ const NewbShaders = [
   },
   {
     title: "Newb X Trailer",
-    redirect: "/shader?shader=newbxtrailer",
+    redirect: "./shader.html?shader=newbxtrailer",
     img: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/trailer/logo.png",
     desc: "By Ale",
     page: {
