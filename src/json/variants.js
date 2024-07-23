@@ -1,5 +1,3 @@
-const { BASE_URL } = import.meta.env;
-
 export const NewbShaders = [
   {
     title: "Newb X Legacy",
@@ -12,16 +10,16 @@ export const NewbShaders = [
       available: "android, ios, windows",
       screenshots: [
         {
-          url: `${BASE_URL}src/images/newbx/legacy/image.png`,
+          url: `/src/images/newbx/legacy/image.png`,
         },
         {
-          url: `${BASE_URL}src/images/newbx/legacy/image2.png`,
+          url: `/src/images/newbx/legacy/image2.png`,
         },
         {
-          url: `${BASE_URL}src/images/newbx/legacy/image3.png`,
+          url: `/src/images/newbx/legacy/image3.png`,
         },
         {
-          url: `${BASE_URL}src/images/newbx/legacy/image4.png`,
+          url: `/src/images/newbx/legacy/image4.png`,
         },
       ],
       downloads: [

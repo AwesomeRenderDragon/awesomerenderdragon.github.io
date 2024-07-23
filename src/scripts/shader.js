@@ -1,20 +1,13 @@
 import { NewbShaders } from "../json/variants";
-import "../styles/shader.css";
 
-let type: any;
-let shader: any;
-const headingTitle = document.querySelector(
-  ".heading-title"
-) as HTMLHeadingElement;
-const headingDesc = document.querySelector(
-  ".heading-desc"
-) as HTMLHeadingElement;
-const headingImg = document.querySelector(".heading-img") as HTMLImageElement;
-const summary = document.querySelector(".summary") as HTMLDivElement;
-const downloads = document.querySelector(".downloads") as HTMLDivElement;
-const screenshots = document.querySelector(
-  ".screenshot-container"
-) as HTMLDivElement;
+let type;
+let shader;
+const headingTitle = document.querySelector(".heading-title");
+const headingDesc = document.querySelector(".heading-desc");
+const headingImg = document.querySelector(".heading-img");
+const summary = document.querySelector(".summary");
+const downloads = document.querySelector(".downloads");
+const screenshots = document.querySelector(".screenshot-container");
 const urlParams = new URLSearchParams(window.location.search);
 const search = urlParams.get("shader");
 
@@ -27,17 +20,17 @@ switch (true) {
     break;
 }
 
-type.forEach((element: { page: { search: string | null } }) => {
+type.forEach((element) => {
   if (element.page.search === search) {
     shader = element;
   }
 });
 
-const simplifyVersion = (version: string) => {
+const simplifyVersion = (version) => {
   return version.replace(".", "").replace(".", "");
 };
 
-const localUpperCase = (str: string) => {
+const localUpperCase = (str) => {
   if (!str) return str;
   return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 };
@@ -73,7 +66,7 @@ if (shader) {
   }
 
   let k = 1;
-  shader.page.screenshots.forEach((shot: any) => {
+  shader.page.screenshots.forEach((shot) => {
     const d = document.createElement("div");
     const i = document.createElement("img");
 
@@ -88,7 +81,7 @@ if (shader) {
     k++;
   });
 
-  shader.page.downloads.forEach((download: any) => {
+  shader.page.downloads.forEach((download) => {
     const versionId = `v${simplifyVersion(download.version)}`;
     let sP = document.body.querySelector(`#${versionId}`);
 
@@ -108,29 +101,31 @@ if (shader) {
       sP = d;
     }
 
-    download.downloads.forEach((item: any) => {
-      let vP
+    download.downloads.forEach((item) => {
+      let vP;
       if (vP) {
       } else {
         const d = document.createElement("details");
         d.id = versionId;
         d.className = "version-details";
-  
+
         const s = document.createElement("summary");
         s.className = "version-title";
-        s.innerHTML = `v${item.version} ${item.versionType} ${item.support ? `<img src=${item.support} />`: ""}`;
-  
+        s.innerHTML = `v${item.version} ${item.versionType} ${
+          item.support ? `<img src=${item.support} />` : ""
+        }`;
+
         d.append(s);
         sP.append(d);
-  
+
         vP = d;
       }
-      item.files.forEach((file: any) => {
+      item.files.forEach((file) => {
         const e = document.createElement("div");
         const v = document.createElement("h1");
         const t = document.createElement("div");
         const a = document.createElement("a");
-  
+
         e.className = "download-item";
         v.className = "download-type";
         a.className = "download-href";
@@ -139,17 +134,13 @@ if (shader) {
         v.innerText = file.name;
         t.innerText =
           file.os !== "ios" ? localUpperCase(file.os) : file.os.toUpperCase();
-  
+
         e.append(v, t, a);
-  
+
         if (vP) {
           vP.append(e);
         }
       });
     });
-
-
-
-
   });
 }
