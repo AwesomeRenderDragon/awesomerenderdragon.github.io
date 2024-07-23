@@ -1,4 +1,4 @@
-const NewbShadersList = JSON.parse(JSON.stringify(NewbShaders));
+var NewbShadersList = JSON.parse(JSON.stringify(NewbShaders));
 
 let type
 const list = document.body.querySelector(".list")
