@@ -1,4 +1,4 @@
-import { Shaders } from "../json/shaders"
+import { Shaders } from "../json/shaders.js"
 
 const list = document.body.querySelector(".list")
 

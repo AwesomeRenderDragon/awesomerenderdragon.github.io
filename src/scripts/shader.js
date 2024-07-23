@@ -1,4 +1,4 @@
-import { NewbShaders } from "../json/variants";
+import { NewbShaders } from "../json/variants.js";
 
 let type;
 let shader;
