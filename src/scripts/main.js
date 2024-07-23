@@ -1,4 +1,4 @@
-var ShadersList = JSON.parse(JSON.stringify(Shaders));
+var ShadersList = JSON.parse(JSON.stringify(shadersList));
 
 const list = document.body.querySelector(".list")
 
