@@ -360,13 +360,48 @@ const NewbShaders = [
   {
     title: "Newb X Future",
     redirect: "./shader.html?shader=newbxfuture",
+
     img: "https://raw.githubusercontent.com/Goofy9506/render-dragon-shaders/main/src/images/newbx/future/logo.png",
     desc: "By 1Sekon",
     page: {
       search: "newbxfuture",
       summary: "",
-      downloads: "",
-      screenshots: "",
+      available: "android",
+      screenshots: [
+        {
+          url: `./src/images/newbx/future/image.png`,
+        },
+      ],
+      downloads: [
+        {
+          version: "16",
+          downloads: [
+            {
+              version: "15.52",
+              versionType: "beta",
+              support:
+                "https://img.shields.io/badge/Supported_MC_version-1.21.0~1.21.1-2d7a3e?style=flat-square",
+              files: [
+                {
+                  href: "",
+                  name: "nxl-15.52-windows.mcpack",
+                  os: "windows",
+                },
+                {
+                  href: "",
+                  name: "nxl-15.52-android.mcpack",
+                  os: "android",
+                },
+                {
+                  href: "",
+                  name: "nxl-15.52-ios.mcpack",
+                  os: "ios",
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
   },
   {
