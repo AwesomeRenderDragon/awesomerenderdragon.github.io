@@ -68,7 +68,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px !important;
-  padding: 0px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
   background-color: #1c202b;
 }
 
@@ -126,13 +128,17 @@ body {
 .downloads .version-details-top {
   color: #cccccc;
 }
+.downloads .version-details-mid {
+  color: #cccccc;
+  margin-left: 15px;
+}
 .downloads .version-details {
   color: #cccccc;
   margin-left: 15px;
 }
 
 .downloads .download-item {
-  width: 300px;
+  width: 350px;
   height: 25px;
   padding: 5px;
   margin-top: 5px;
@@ -150,6 +156,12 @@ body {
   font-weight: 500;
   margin-top: 2px;
   margin-bottom: 0;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box !important;
   width: fit-content;
 }
 
@@ -159,7 +171,7 @@ body {
   font-size: 12px;
   width: 100%;
   font-weight: 700;
-  margin-top: 4px;
+  margin-top: 2px;
   margin-bottom: 0;
   width: fit-content;
 }
@@ -226,4 +238,31 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.icon {
+  width: 20px;
+}
+
+.icon.android {
+  color: #53b347;
+  fill: #53b347;
+  filter: invert(68%) sepia(75%) saturate(415%) hue-rotate(29deg)
+    brightness(97%) contrast(81%);
+}
+
+.icon.windows {
+  color: #53b347;
+  fill: #53b347;
+  margin-left: 5px;
+  shape-rendering: crispEdges;
+  filter: invert(27%) sepia(100%) saturate(1289%) hue-rotate(185deg)
+    brightness(106%) contrast(104%);
+}
+
+.icon.ios {
+  color: #53b347;
+  fill: #53b347;
+  margin-left: 5px;
+  filter: invert(100%);
 }

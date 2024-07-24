@@ -1,4 +1,5 @@
 var NewbShadersList = JSON.parse(JSON.stringify(NewbShaders));
+var YSSShadersList = JSON.parse(JSON.stringify(YSS));
 
 let type;
 let shader;
@@ -16,6 +17,8 @@ switch (true) {
   case search?.includes("newbx"):
     type = NewbShadersList;
     break;
+  case search?.includes("yssrd"):
+    type = YSSShadersList;
   default:
     break;
 }
@@ -28,11 +31,6 @@ type.forEach((element) => {
 
 const simplifyVersion = (version) => {
   return version.replace(".", "").replace(".", "");
-};
-
-const localUpperCase = (str) => {
-  if (!str) return str;
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 };
 
 if (shader) {
@@ -60,6 +58,20 @@ if (shader) {
       const i = document.createElement("img");
       i.src =
         "https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=Windows";
+      i.className = "available";
+      headingTitle.parentElement?.prepend(i);
+    }
+    if (shader.page.available.includes("xbox")) {
+      const i = document.createElement("img");
+      i.src =
+        "https://img.shields.io/badge/Xbox-107c10?style=flat-square&logo=xbox";
+      i.className = "available";
+      headingTitle.parentElement?.prepend(i);
+    }
+    if (shader.page.available.includes("switch")) {
+      const i = document.createElement("img");
+      i.src =
+        "https://img.shields.io/badge/Switch-e60012?style=flat-square&logo=nintendoswitch";
       i.className = "available";
       headingTitle.parentElement?.prepend(i);
     }
@@ -102,8 +114,26 @@ if (shader) {
     }
 
     download.downloads.forEach((item) => {
-      let vP;
+      const versionId = `${simplifyVersion(item.versionType)}v${simplifyVersion(download.version)}`;
+      let vP = document.body.querySelector(`#${versionId}`);
       if (vP) {
+      } else {
+        const d = document.createElement("details");
+        d.id = versionId;
+        d.className = "version-details-mid";
+        
+        const s = document.createElement("summary");
+        s.className = "version-title";
+        s.innerHTML = `${item.versionType}`;
+
+        d.append(s);
+        sP.append(d);
+
+        vP = d;
+      }
+
+      let bP;
+      if (bP) {
       } else {
         const d = document.createElement("details");
         d.id = versionId;
@@ -111,14 +141,14 @@ if (shader) {
 
         const s = document.createElement("summary");
         s.className = "version-title";
-        s.innerHTML = `v${item.version} ${item.versionType} ${
+        s.innerHTML = `v${item.version} ${
           item.support ? `<img src=${item.support} />` : ""
         }`;
 
         d.append(s);
-        sP.append(d);
+        vP.append(d);
 
-        vP = d;
+        bP = d;
       }
       item.files.forEach((file) => {
         const e = document.createElement("div");
@@ -130,15 +160,35 @@ if (shader) {
         v.className = "download-type";
         a.className = "download-href";
         t.className = "download-os";
-        a.href = file.href;
+        a.href = `${shader.page.href}${item.version}/${file.name}`;
         v.innerText = file.name;
-        t.innerText =
-          file.os !== "ios" ? localUpperCase(file.os) : file.os.toUpperCase();
+        // t.innerText = file.os;
 
         e.append(v, t, a);
 
-        if (vP) {
-          vP.append(e);
+        if (file.os.includes("android")) {
+          const android = document.createElement('img')
+          android.className = "icon android"
+          android.src = './src/assets/icons/android.svg'
+          t.append(android)
+        }
+
+        if (file.os.includes("windows")) {
+          const windows = document.createElement('img')
+          windows.className = "icon windows"
+          windows.src = './src/assets/icons/windows.svg'
+          t.append(windows)
+        }
+
+        if (file.os.includes("ios")) {
+          const ios = document.createElement('img')
+          ios.className = "icon ios"
+          ios.src = './src/assets/icons/apple.svg'
+          t.append(ios)
+        }
+
+        if (bP) {
+          bP.append(e);
         }
       });
     });
