@@ -324,6 +324,15 @@ const NewbShaders = [
         {
           url: `./src/images/newbx/future/image.png`,
         },
+        {
+          url: `./src/images/newbx/future/image2.png`,
+        },
+        {
+          url: `./src/images/newbx/future/image3.png`,
+        },
+        {
+          url: `./src/images/newbx/future/image4.png`,
+        },
       ],
       downloads: [
         {
@@ -470,9 +479,142 @@ const NewbShaders = [
     desc: "By KuriMC",
     page: {
       search: "newbxparetion",
+      available: "android, ios, windows",
       summary: "",
-      downloads: "",
-      screenshots: "",
+      href: "https://github.com/AwesomeRenderDragon/rd-shaders-files/raw/main/newb/paretion/",
+      screenshots: [
+        {
+          url: `./src/images/newbx/paretion/image.png`,
+        },
+        {
+          url: `./src/images/newbx/paretion/image2.png`,
+        },
+        {
+          url: `./src/images/newbx/paretion/image3.png`,
+        },
+        {
+          url: `./src/images/newbx/paretion/image4.png`,
+        },
+      ],
+      downloads: [
+        {
+          version: "Latest",
+          downloads: [
+            {
+              version: "1.20.80+",
+              versionType: "stable",
+              support:
+                "https://img.shields.io/badge/Supported_MC_version-1.20.80+-2d7a3e?style=flat-square",
+              files: [
+                {
+                  name: "Newb X Paretion Normal Windows 1.20.80+.mcpack",
+                  os: "windows",
+                },
+                {
+                  name: "Newb X Paretion Reimagied Windows 1.20.80+.mcpack",
+                  os: "windows",
+                },
+                {
+                  name: "Newb X Paretion Cherry Edition Windows 1.20.80.mcpack",
+                  os: "windows",
+                },
+                {
+                  name: "Newb X Paretion HGR Windows 1.20.80+.mcpack",
+                  os: "windows",
+                },
+                {
+                  name: "Newb X Paretion Normal Android 1.20.80+.mcpack",
+                  os: "android",
+                },
+                {
+                  name: "Newb X Paretion Reimagied Android 1.20.80.mcpack",
+                  os: "android",
+                },
+                {
+                  name: "Newb X Paretion Cherry Edition Android 1.20.80+.mcpack",
+                  os: "android",
+                },
+                {
+                  name: "Newb X Paretion HGR Android 1.20.80+.mcpack",
+                  os: "android",
+                },
+                {
+                  name: "Newb X Paretion Normal iOS 1.20.80+.mcpack",
+                  os: "ios",
+                },
+                {
+                  name: "Newb X Paretion Reimagied iOS 1.20.80.mcpack",
+                  os: "ios",
+                },
+                {
+                  name: "Newb X Paretion Cherry Edition iOS 1.20.80.mcpack",
+                  os: "ios",
+                },
+                {
+                  name: "Newb X Paretion HGR iOS 1.20.80+.mcpack",
+                  os: "ios",
+                },
+              ],
+            },
+            {
+              version: "1.20.0-1.20.73",
+              versionType: "stable",
+              support:
+                "https://img.shields.io/badge/Supported_MC_version-1.20.0~1.20.73-2d7a3e?style=flat-square",
+              files: [
+                {
+                  name: "Newb X Paretion Normal Windows 1.20.0 - 1.20.73.mcpack",
+                  os: "windows",
+                },
+                {
+                  name: "Newb X Paretion Reimagied Windows 1.20.0 - 1.20.73.mcpack",
+                  os: "windows",
+                },
+                {
+                  name: "Newb X Paretion Cherry Edition Windows 1.20.0 - 1.20.73.mcpack",
+                  os: "windows",
+                },
+                {
+                  name: "Newb X Paretion HGR Windows 1.20.0 - 1.20.73.mcpack",
+                  os: "windows",
+                },
+                {
+                  name: "Newb X Paretion Normal Android 1.20.0 - 1.20.73.mcpack",
+                  os: "android",
+                },
+                {
+                  name: "Newb X Paretion Reimagied Android 1.20.0 - 1.20.73.mcpack",
+                  os: "android",
+                },
+                {
+                  name: "Newb X Paretion Cherry Edition Android 1.20.0 - 1.20.73.mcpack",
+                  os: "android",
+                },
+                {
+                  name: "Newb X Paretion HGR Android 1.20.0 - 1.20.73.mcpack",
+                  os: "android",
+                },
+                {
+                  name: "Newb X Paretion Normal iOS 1.20.0 - 1.20.73.mcpack",
+                  os: "ios",
+                },
+                {
+                  name: "Newb X Paretion Reimagied iOS 1.20.0 - 1.20.73.mcpack",
+                  os: "ios",
+                },
+                {
+                  name: "Newb X Paretion Cherry Edition iOS 1.20.0 - 1.20.73.mcpack",
+                  os: "ios",
+                },
+                {
+                  name: "Newb X Paretion HGR iOS 1.20.0 - 1.20.73.mcpack",
+                  os: "ios",
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
   },
   {
@@ -493,7 +635,7 @@ const YSS = [
   {
     title: "YSS RD",
     redirect: "./shader.html?shader=yssrd",
-    img: "./src/images/yssrd/logo.png",
+    img: "./src/images/yss/logo.png",
     desc: "By Years Static Shaders Group",
     page: {
       search: "yssrd",
@@ -502,7 +644,16 @@ const YSS = [
       available: "android, windows, ios, xbox, switch",
       screenshots: [
         {
-          url: `./src/images/newbx/future/image.png`,
+          url: `./src/images/yss/rd/image.png`,
+        },
+        {
+          url: `./src/images/yss/rd/image2.png`,
+        },
+        {
+          url: `./src/images/yss/rd/image3.png`,
+        },
+        {
+          url: `./src/images/yss/rd/image4.png`,
         },
       ],
       downloads: [
@@ -574,6 +725,8 @@ const YSS = [
             {
               version: "1.9.8 Beta 3 Lite",
               versionType: "beta",
+              support:
+                "https://img.shields.io/badge/Supported_from_this_version-Xbox-107c10?style=flat-square",
               files: [
                 {
                   name: "YSS_RD_1.9.8_Beta3_Lite.zip",
@@ -616,6 +769,8 @@ const YSS = [
             {
               version: "1.9.7",
               versionType: "stable",
+              support:
+                "https://img.shields.io/badge/Supported_from_this_version-Nintendo_Switch-e60012?style=flat-square",
               files: [
                 {
                   name: "YSS_RD_1.9.7.zip",
